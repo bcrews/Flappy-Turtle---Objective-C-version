@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		422A1E451A906D9D0006CD17 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 422A1E441A906D9D0006CD17 /* sprites.atlas */; };
+		42EFEF5619B3E6FB003FDE5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EFEF5519B3E6FB003FDE5C /* Foundation.framework */; };
+		42EFEF5819B3E6FB003FDE5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EFEF5719B3E6FB003FDE5C /* CoreGraphics.framework */; };
+		42EFEF5A19B3E6FB003FDE5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EFEF5919B3E6FB003FDE5C /* UIKit.framework */; };
+		42EFEF5C19B3E6FB003FDE5C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EFEF5B19B3E6FB003FDE5C /* SpriteKit.framework */; };
+		42EFEF6219B3E6FB003FDE5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42EFEF6019B3E6FB003FDE5C /* InfoPlist.strings */; };
+		42EFEF6419B3E6FB003FDE5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFEF6319B3E6FB003FDE5C /* main.m */; };
+		42EFEF6819B3E6FB003FDE5C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFEF6719B3E6FB003FDE5C /* AppDelegate.m */; };
+		42EFEF6B19B3E6FB003FDE5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42EFEF6919B3E6FB003FDE5C /* Main.storyboard */; };
+		42EFEF6E19B3E6FB003FDE5C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFEF6D19B3E6FB003FDE5C /* ViewController.m */; };
+		42EFEF7119B3E6FB003FDE5C /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFEF7019B3E6FB003FDE5C /* MyScene.m */; };
+		42EFEF7519B3E6FB003FDE5C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42EFEF7419B3E6FB003FDE5C /* Images.xcassets */; };
+		42EFFA4D19B3F80B003FDE5C /* backgrounds.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 42EFFA3119B3F80A003FDE5C /* backgrounds.atlas */; };
+		42EFFA4F19B3F80B003FDE5C /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFFA3519B3F80B003FDE5C /* SKAction+SKTExtras.m */; };
+		42EFFA5019B3F80B003FDE5C /* SKAction+SKTSpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFFA3719B3F80B003FDE5C /* SKAction+SKTSpecialEffects.m */; };
+		42EFFA5119B3F80B003FDE5C /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFFA3919B3F80B003FDE5C /* SKEmitterNode+SKTExtras.m */; };
+		42EFFA5219B3F80B003FDE5C /* SKNode+SKTDebugDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFFA3B19B3F80B003FDE5C /* SKNode+SKTDebugDraw.m */; };
+		42EFFA5319B3F80B003FDE5C /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFFA3D19B3F80B003FDE5C /* SKNode+SKTExtras.m */; };
+		42EFFA5419B3F80B003FDE5C /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFFA3F19B3F80B003FDE5C /* SKTAudio.m */; };
+		42EFFA5519B3F80B003FDE5C /* SKTEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFFA4119B3F80B003FDE5C /* SKTEffects.m */; };
+		42EFFA5619B3F80B003FDE5C /* SKTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFFA4319B3F80B003FDE5C /* SKTTimingFunctions.m */; };
+		42EFFA5719B3F80B003FDE5C /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42EFFA4619B3F80B003FDE5C /* coin.wav */; };
+		42EFFA5819B3F80B003FDE5C /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42EFFA4719B3F80B003FDE5C /* ding.wav */; };
+		42EFFA5919B3F80B003FDE5C /* falling.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42EFFA4819B3F80B003FDE5C /* falling.wav */; };
+		42EFFA5A19B3F80B003FDE5C /* flapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42EFFA4919B3F80B003FDE5C /* flapping.wav */; };
+		42EFFA5B19B3F80B003FDE5C /* hitGround.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42EFFA4A19B3F80B003FDE5C /* hitGround.wav */; };
+		42EFFA5C19B3F80B003FDE5C /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42EFFA4B19B3F80B003FDE5C /* pop.wav */; };
+		42EFFA5D19B3F80B003FDE5C /* whack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42EFFA4C19B3F80B003FDE5C /* whack.wav */; };
+		42EFFA5F19B68F96003FDE5C /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42EFFA5E19B68F96003FDE5C /* iAd.framework */; };
+		42F2F6A31A894666007926B5 /* GameKitHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 420FD9631A83F19B0001E274 /* GameKitHelper.m */; };
+		42F2F6A51A894666007926B5 /* AchievementsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4232445D1A847F7500D61127 /* AchievementsHelper.m */; };
+		42F2F6AA1A894D70007926B5 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F2F6A61A894BC2007926B5 /* GameKit.framework */; };
+		42FCD5881A1409820079026D /* SharingActivityProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FCD5871A1409820079026D /* SharingActivityProvider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		420FD9621A83F19B0001E274 /* GameKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameKitHelper.h; sourceTree = "<group>"; };
+		420FD9631A83F19B0001E274 /* GameKitHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameKitHelper.m; sourceTree = "<group>"; };
+		422A1E441A906D9D0006CD17 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		4232445C1A847F7500D61127 /* AchievementsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementsHelper.h; sourceTree = "<group>"; };
+		4232445D1A847F7500D61127 /* AchievementsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementsHelper.m; sourceTree = "<group>"; };
+		42EFEF5219B3E6FB003FDE5C /* Flappy Turtle - Aquarium Adventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Turtle - Aquarium Adventure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EFEF5519B3E6FB003FDE5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42EFEF5719B3E6FB003FDE5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42EFEF5919B3E6FB003FDE5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42EFEF5B19B3E6FB003FDE5C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		42EFEF5F19B3E6FB003FDE5C /* Flappy Turtle - Aquarium Adventure-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flappy Turtle - Aquarium Adventure-Info.plist"; sourceTree = "<group>"; };
+		42EFEF6119B3E6FB003FDE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42EFEF6319B3E6FB003FDE5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42EFEF6519B3E6FB003FDE5C /* Flappy Turtle - Aquarium Adventure-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flappy Turtle - Aquarium Adventure-Prefix.pch"; sourceTree = "<group>"; };
+		42EFEF6619B3E6FB003FDE5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42EFEF6719B3E6FB003FDE5C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42EFEF6A19B3E6FB003FDE5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42EFEF6C19B3E6FB003FDE5C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		42EFEF6D19B3E6FB003FDE5C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		42EFEF6F19B3E6FB003FDE5C /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		42EFEF7019B3E6FB003FDE5C /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		42EFEF7419B3E6FB003FDE5C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42EFEF8319B3E6FB003FDE5C /* Flappy Turtle - Aquarium AdventureTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flappy Turtle - Aquarium AdventureTests-Info.plist"; sourceTree = "<group>"; };
+		42EFEF8519B3E6FB003FDE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42EFEF8719B3E6FB003FDE5C /* Flappy_TurtleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flappy_TurtleTests.m; sourceTree = "<group>"; };
+		42EFFA3119B3F80A003FDE5C /* backgrounds.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = backgrounds.atlas; sourceTree = "<group>"; };
+		42EFFA3419B3F80B003FDE5C /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		42EFFA3519B3F80B003FDE5C /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		42EFFA3619B3F80B003FDE5C /* SKAction+SKTSpecialEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTSpecialEffects.h"; sourceTree = "<group>"; };
+		42EFFA3719B3F80B003FDE5C /* SKAction+SKTSpecialEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTSpecialEffects.m"; sourceTree = "<group>"; };
+		42EFFA3819B3F80B003FDE5C /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		42EFFA3919B3F80B003FDE5C /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		42EFFA3A19B3F80B003FDE5C /* SKNode+SKTDebugDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTDebugDraw.h"; sourceTree = "<group>"; };
+		42EFFA3B19B3F80B003FDE5C /* SKNode+SKTDebugDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTDebugDraw.m"; sourceTree = "<group>"; };
+		42EFFA3C19B3F80B003FDE5C /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		42EFFA3D19B3F80B003FDE5C /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		42EFFA3E19B3F80B003FDE5C /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		42EFFA3F19B3F80B003FDE5C /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		42EFFA4019B3F80B003FDE5C /* SKTEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTEffects.h; sourceTree = "<group>"; };
+		42EFFA4119B3F80B003FDE5C /* SKTEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTEffects.m; sourceTree = "<group>"; };
+		42EFFA4219B3F80B003FDE5C /* SKTTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTTimingFunctions.h; sourceTree = "<group>"; };
+		42EFFA4319B3F80B003FDE5C /* SKTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTTimingFunctions.m; sourceTree = "<group>"; };
+		42EFFA4419B3F80B003FDE5C /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		42EFFA4619B3F80B003FDE5C /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
+		42EFFA4719B3F80B003FDE5C /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		42EFFA4819B3F80B003FDE5C /* falling.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = falling.wav; sourceTree = "<group>"; };
+		42EFFA4919B3F80B003FDE5C /* flapping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flapping.wav; sourceTree = "<group>"; };
+		42EFFA4A19B3F80B003FDE5C /* hitGround.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitGround.wav; sourceTree = "<group>"; };
+		42EFFA4B19B3F80B003FDE5C /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		42EFFA4C19B3F80B003FDE5C /* whack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whack.wav; sourceTree = "<group>"; };
+		42EFFA5E19B68F96003FDE5C /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		42F2F6A61A894BC2007926B5 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		42F2F6A81A894D04007926B5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		42FCD5861A14092E0079026D /* SharingActivityProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharingActivityProvider.h; sourceTree = "<group>"; };
+		42FCD5871A1409820079026D /* SharingActivityProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharingActivityProvider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42EFEF4F19B3E6FB003FDE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F2F6AA1A894D70007926B5 /* GameKit.framework in Frameworks */,
+				42EFEF5C19B3E6FB003FDE5C /* SpriteKit.framework in Frameworks */,
+				42EFFA5F19B68F96003FDE5C /* iAd.framework in Frameworks */,
+				42EFEF5819B3E6FB003FDE5C /* CoreGraphics.framework in Frameworks */,
+				42EFEF5A19B3E6FB003FDE5C /* UIKit.framework in Frameworks */,
+				42EFEF5619B3E6FB003FDE5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		420FD95B1A83E8DC0001E274 /* GameKit */ = {
+			isa = PBXGroup;
+			children = (
+				420FD9621A83F19B0001E274 /* GameKitHelper.h */,
+				420FD9631A83F19B0001E274 /* GameKitHelper.m */,
+				4232445C1A847F7500D61127 /* AchievementsHelper.h */,
+				4232445D1A847F7500D61127 /* AchievementsHelper.m */,
+			);
+			name = GameKit;
+			sourceTree = "<group>";
+		};
+		42EFEF4919B3E6FB003FDE5C = {
+			isa = PBXGroup;
+			children = (
+				42EFEF5D19B3E6FB003FDE5C /* Flappy Turtle */,
+				42EFEF8119B3E6FB003FDE5C /* Flappy TurtleTests */,
+				42EFEF5419B3E6FB003FDE5C /* Frameworks */,
+				42EFEF5319B3E6FB003FDE5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42EFEF5319B3E6FB003FDE5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42EFEF5219B3E6FB003FDE5C /* Flappy Turtle - Aquarium Adventure.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42EFEF5419B3E6FB003FDE5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F2F6A81A894D04007926B5 /* StoreKit.framework */,
+				42F2F6A61A894BC2007926B5 /* GameKit.framework */,
+				42EFFA5E19B68F96003FDE5C /* iAd.framework */,
+				42EFEF5519B3E6FB003FDE5C /* Foundation.framework */,
+				42EFEF5719B3E6FB003FDE5C /* CoreGraphics.framework */,
+				42EFEF5919B3E6FB003FDE5C /* UIKit.framework */,
+				42EFEF5B19B3E6FB003FDE5C /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42EFEF5D19B3E6FB003FDE5C /* Flappy Turtle */ = {
+			isa = PBXGroup;
+			children = (
+				420FD95B1A83E8DC0001E274 /* GameKit */,
+				42EFFA2F19B3F80A003FDE5C /* Resources */,
+				42EFEF6619B3E6FB003FDE5C /* AppDelegate.h */,
+				42EFEF6719B3E6FB003FDE5C /* AppDelegate.m */,
+				42EFEF6919B3E6FB003FDE5C /* Main.storyboard */,
+				42EFEF6C19B3E6FB003FDE5C /* ViewController.h */,
+				42EFEF6D19B3E6FB003FDE5C /* ViewController.m */,
+				42FCD5861A14092E0079026D /* SharingActivityProvider.h */,
+				42FCD5871A1409820079026D /* SharingActivityProvider.m */,
+				42EFEF6F19B3E6FB003FDE5C /* MyScene.h */,
+				42EFEF7019B3E6FB003FDE5C /* MyScene.m */,
+				42EFEF7419B3E6FB003FDE5C /* Images.xcassets */,
+				42EFEF5E19B3E6FB003FDE5C /* Supporting Files */,
+			);
+			path = "Flappy Turtle";
+			sourceTree = "<group>";
+		};
+		42EFEF5E19B3E6FB003FDE5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42EFEF5F19B3E6FB003FDE5C /* Flappy Turtle - Aquarium Adventure-Info.plist */,
+				42EFEF6019B3E6FB003FDE5C /* InfoPlist.strings */,
+				42EFEF6319B3E6FB003FDE5C /* main.m */,
+				42EFEF6519B3E6FB003FDE5C /* Flappy Turtle - Aquarium Adventure-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42EFEF8119B3E6FB003FDE5C /* Flappy TurtleTests */ = {
+			isa = PBXGroup;
+			children = (
+				42EFEF8719B3E6FB003FDE5C /* Flappy_TurtleTests.m */,
+				42EFEF8219B3E6FB003FDE5C /* Supporting Files */,
+			);
+			path = "Flappy TurtleTests";
+			sourceTree = "<group>";
+		};
+		42EFEF8219B3E6FB003FDE5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42EFEF8319B3E6FB003FDE5C /* Flappy Turtle - Aquarium AdventureTests-Info.plist */,
+				42EFEF8419B3E6FB003FDE5C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42EFFA2F19B3F80A003FDE5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42EFFA3019B3F80A003FDE5C /* Art */,
+				42EFFA3319B3F80B003FDE5C /* SKTUtils */,
+				42EFFA4519B3F80B003FDE5C /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		42EFFA3019B3F80A003FDE5C /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				422A1E441A906D9D0006CD17 /* sprites.atlas */,
+				42EFFA3119B3F80A003FDE5C /* backgrounds.atlas */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		42EFFA3319B3F80B003FDE5C /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				42EFFA3419B3F80B003FDE5C /* SKAction+SKTExtras.h */,
+				42EFFA3519B3F80B003FDE5C /* SKAction+SKTExtras.m */,
+				42EFFA3619B3F80B003FDE5C /* SKAction+SKTSpecialEffects.h */,
+				42EFFA3719B3F80B003FDE5C /* SKAction+SKTSpecialEffects.m */,
+				42EFFA3819B3F80B003FDE5C /* SKEmitterNode+SKTExtras.h */,
+				42EFFA3919B3F80B003FDE5C /* SKEmitterNode+SKTExtras.m */,
+				42EFFA3A19B3F80B003FDE5C /* SKNode+SKTDebugDraw.h */,
+				42EFFA3B19B3F80B003FDE5C /* SKNode+SKTDebugDraw.m */,
+				42EFFA3C19B3F80B003FDE5C /* SKNode+SKTExtras.h */,
+				42EFFA3D19B3F80B003FDE5C /* SKNode+SKTExtras.m */,
+				42EFFA3E19B3F80B003FDE5C /* SKTAudio.h */,
+				42EFFA3F19B3F80B003FDE5C /* SKTAudio.m */,
+				42EFFA4019B3F80B003FDE5C /* SKTEffects.h */,
+				42EFFA4119B3F80B003FDE5C /* SKTEffects.m */,
+				42EFFA4219B3F80B003FDE5C /* SKTTimingFunctions.h */,
+				42EFFA4319B3F80B003FDE5C /* SKTTimingFunctions.m */,
+				42EFFA4419B3F80B003FDE5C /* SKTUtils.h */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		42EFFA4519B3F80B003FDE5C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				42EFFA4619B3F80B003FDE5C /* coin.wav */,
+				42EFFA4719B3F80B003FDE5C /* ding.wav */,
+				42EFFA4819B3F80B003FDE5C /* falling.wav */,
+				42EFFA4919B3F80B003FDE5C /* flapping.wav */,
+				42EFFA4A19B3F80B003FDE5C /* hitGround.wav */,
+				42EFFA4B19B3F80B003FDE5C /* pop.wav */,
+				42EFFA4C19B3F80B003FDE5C /* whack.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42EFEF5119B3E6FB003FDE5C /* Flappy Turtle - Aquarium Adventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EFEF8B19B3E6FB003FDE5C /* Build configuration list for PBXNativeTarget "Flappy Turtle - Aquarium Adventure" */;
+			buildPhases = (
+				42EFEF4E19B3E6FB003FDE5C /* Sources */,
+				42EFEF4F19B3E6FB003FDE5C /* Frameworks */,
+				42EFEF5019B3E6FB003FDE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flappy Turtle - Aquarium Adventure";
+			productName = "Flappy Turtle";
+			productReference = 42EFEF5219B3E6FB003FDE5C /* Flappy Turtle - Aquarium Adventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42EFEF4A19B3E6FB003FDE5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Bill Crews";
+				TargetAttributes = {
+					42EFEF5119B3E6FB003FDE5C = {
+						DevelopmentTeam = N6QSYL24TV;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 42EFEF4D19B3E6FB003FDE5C /* Build configuration list for PBXProject "Flappy Turtle - Aquarium Adventure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42EFEF4919B3E6FB003FDE5C;
+			productRefGroup = 42EFEF5319B3E6FB003FDE5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42EFEF5119B3E6FB003FDE5C /* Flappy Turtle - Aquarium Adventure */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42EFEF5019B3E6FB003FDE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EFFA5B19B3F80B003FDE5C /* hitGround.wav in Resources */,
+				42EFFA5819B3F80B003FDE5C /* ding.wav in Resources */,
+				42EFEF6219B3E6FB003FDE5C /* InfoPlist.strings in Resources */,
+				42EFFA5A19B3F80B003FDE5C /* flapping.wav in Resources */,
+				42EFEF7519B3E6FB003FDE5C /* Images.xcassets in Resources */,
+				42EFFA5919B3F80B003FDE5C /* falling.wav in Resources */,
+				42EFFA5719B3F80B003FDE5C /* coin.wav in Resources */,
+				42EFEF6B19B3E6FB003FDE5C /* Main.storyboard in Resources */,
+				42EFFA4D19B3F80B003FDE5C /* backgrounds.atlas in Resources */,
+				42EFFA5C19B3F80B003FDE5C /* pop.wav in Resources */,
+				422A1E451A906D9D0006CD17 /* sprites.atlas in Resources */,
+				42EFFA5D19B3F80B003FDE5C /* whack.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42EFEF4E19B3E6FB003FDE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F2F6A31A894666007926B5 /* GameKitHelper.m in Sources */,
+				42F2F6A51A894666007926B5 /* AchievementsHelper.m in Sources */,
+				42EFEF7119B3E6FB003FDE5C /* MyScene.m in Sources */,
+				42FCD5881A1409820079026D /* SharingActivityProvider.m in Sources */,
+				42EFFA5519B3F80B003FDE5C /* SKTEffects.m in Sources */,
+				42EFFA5319B3F80B003FDE5C /* SKNode+SKTExtras.m in Sources */,
+				42EFEF6E19B3E6FB003FDE5C /* ViewController.m in Sources */,
+				42EFFA5119B3F80B003FDE5C /* SKEmitterNode+SKTExtras.m in Sources */,
+				42EFFA4F19B3F80B003FDE5C /* SKAction+SKTExtras.m in Sources */,
+				42EFFA5619B3F80B003FDE5C /* SKTTimingFunctions.m in Sources */,
+				42EFEF6819B3E6FB003FDE5C /* AppDelegate.m in Sources */,
+				42EFEF6419B3E6FB003FDE5C /* main.m in Sources */,
+				42EFFA5219B3F80B003FDE5C /* SKNode+SKTDebugDraw.m in Sources */,
+				42EFFA5019B3F80B003FDE5C /* SKAction+SKTSpecialEffects.m in Sources */,
+				42EFFA5419B3F80B003FDE5C /* SKTAudio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42EFEF6019B3E6FB003FDE5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EFEF6119B3E6FB003FDE5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42EFEF6919B3E6FB003FDE5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EFEF6A19B3E6FB003FDE5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42EFEF8419B3E6FB003FDE5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42EFEF8519B3E6FB003FDE5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42EFEF8919B3E6FB003FDE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				New_Setting = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = NO;
+				SPRITEKIT_TEXTURE_ATLAS_SIZE = 4096x4096;
+			};
+			name = Debug;
+		};
+		42EFEF8A19B3E6FB003FDE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				New_Setting = "";
+				SDKROOT = iphoneos;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = NO;
+				SPRITEKIT_TEXTURE_ATLAS_SIZE = 4096x4096;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42EFEF8C19B3E6FB003FDE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Turtle/Flappy Turtle - Aquarium Adventure-Prefix.pch";
+				INFOPLIST_FILE = "Flappy Turtle/Flappy Turtle - Aquarium Adventure-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BCAppDesigns.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Flappy Turtle - Aquarium Adventure";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42EFEF8D19B3E6FB003FDE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Flappy Turtle/Flappy Turtle - Aquarium Adventure-Prefix.pch";
+				INFOPLIST_FILE = "Flappy Turtle/Flappy Turtle - Aquarium Adventure-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BCAppDesigns.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Flappy Turtle - Aquarium Adventure";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42EFEF4D19B3E6FB003FDE5C /* Build configuration list for PBXProject "Flappy Turtle - Aquarium Adventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EFEF8919B3E6FB003FDE5C /* Debug */,
+				42EFEF8A19B3E6FB003FDE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EFEF8B19B3E6FB003FDE5C /* Build configuration list for PBXNativeTarget "Flappy Turtle - Aquarium Adventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EFEF8C19B3E6FB003FDE5C /* Debug */,
+				42EFEF8D19B3E6FB003FDE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42EFEF4A19B3E6FB003FDE5C /* Project object */;
+}
